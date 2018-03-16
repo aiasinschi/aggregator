@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Craiova football news</title>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+        <script src="code.js"></script>
+        <style>
+            body {
+                font-family: 'Ubuntu Condensed', sans-serif;                
+            }
+            .button {
+                cursor: pointer;
+                border-radius: 5px;
+                background: black;
+                color: white;
+                font-weight: bolder;
+                max-width: 70px;
+                font-family: sans-serif;
+                text-align: center;
+                padding: 3px;
+                box-shadow: 3px 4px lightgrey;
+                display: inline-block;
+            }
+            #gsp {
+                margin-top: 20px;
+                height: 90%;
+            }
+            h1 {
+                font-size: 12px;
+            }
+            .article {               
+                margin-bottom: 10px;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            .art-dgi {
+                background: lightblue;
+            }
+            .art-gsp {
+                background: salmon;
+            }
+            .art-pro {
+                background: lightgray;
+            }
+            .paragraph {                
+                font-size: 16px;
+                margin-bottom: 2px;
+            }
+            .pro {
+                background: black;
+                color: red;
+            }
+            .dgi {
+                background: navy;
+                color: lightcyan;
+            }
+            .gsp {
+                background: red;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="button gsp" onclick="fetchGSP();">gsp</div>
+        <div class="button pro" onclick="fetchPRO();">prosport</div>
+        <div class="button dgi" onclick="fetchDGI();">digi</div>
+        <div id="gsp">
+            
+        </div>
+        
+        
+      <!--<h1>Hello World!</h1>
+      We are using node <script>document.write(process.versions.node)</script>,
+      Chrome <script>document.write(process.versions.chrome)</script>,
+      and Electron <script>document.write(process.versions.electron)</script>.-->
+    </body>
+</html>
